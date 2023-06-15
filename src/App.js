@@ -1,12 +1,9 @@
 import React, { useState } from "react"
-import ReactDOM from "react-dom"
 import { PDFViewer, PDFDownloadLink } from "@react-pdf/renderer"
 import MyDocument from "./components/MyDocument"
-import { usePDF } from "@react-pdf/renderer"
 import "./App.css"
 
 function App() {
-	const [name, setName] = useState("")
 	const [sec1, setSec1] = useState([false, false, false, false, false])
 	const [sec2, setSec2] = useState({
 		trainNoAndName: "-",
@@ -100,7 +97,7 @@ function App() {
 	}
 
 	const deletePass = (ind) => {
-		let tmpArr = passengers.filter((x) => x.sno != ind)
+		let tmpArr = passengers.filter((x) => x.sno !== ind)
 		tmpArr = tmpArr.map((x, i) => {
 			return { ...x, sno: i + 1 }
 		})
@@ -128,7 +125,7 @@ function App() {
 	}
 
 	const deleteChild = (ind) => {
-		let tmpArr = children.filter((x) => x.sno != ind)
+		let tmpArr = children.filter((x) => x.sno !== ind)
 		tmpArr = tmpArr.map((x, i) => {
 			return { ...x, sno: i + 1 }
 		})
@@ -612,7 +609,7 @@ function App() {
 						}
 						fileName={`${Date.now()}`}
 					>
-						{({ blob, url, loading, error }) =>
+						{({ loading }) =>
 							loading ? "Loading document..." : "Download now!"
 						}
 					</PDFDownloadLink>

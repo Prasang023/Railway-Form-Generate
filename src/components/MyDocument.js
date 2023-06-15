@@ -4,8 +4,7 @@ import {
 	Text,
 	View,
 	Document,
-	StyleSheet,
-	Note
+	StyleSheet
 } from "@react-pdf/renderer"
 
 // Create styles
