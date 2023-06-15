@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+.container {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* height: 100vh; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.formContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  max-width: 900px;
+  margin: 100px;
+  /* overflow-y: scroll; */
+}
+
+.btn {
+  padding: 10px;
+  color: #fff;
+  background-color: rgb(43, 43, 221);
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-delete {
+  padding: 2px 5px;
+  background-color: transparent;
+  color: black;
+  margin-top: 15px;
+}
+
+.btn-add {
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.secDiv {
+  width: 100%;
+}
+
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputLabel {
+  font-weight: bold;
+}
+
+.inputField {
+  padding: 9px;
+  border: 1px solid #9e9e9e;
+  border-radius: 5px;
+}
+
+.inputRow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.pInputRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.pinput {
+  margin: 5px;
+  /* max-width: 50px; */
+}
+
+.btn-dwd {
+  text-decoration: none;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
