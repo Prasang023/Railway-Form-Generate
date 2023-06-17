@@ -11,7 +11,8 @@ import {
 const styles = StyleSheet.create({
 	page: {
 		flexDirection: "column",
-		backgroundColor: "#E4E4E4"
+		backgroundColor: "#E4E4E4",
+		padding: "0px 10px"
 	},
 	section: {
 		margin: 1,
@@ -28,21 +29,21 @@ const styles = StyleSheet.create({
 	},
 	title: {
 		fontWeight: "bold",
-		fontSize: "6px"
+		fontSize: "7px"
 	},
 	txt: {
-		fontSize: "5px"
+		fontSize: "6px"
 	},
 	txtsm: {
-		fontSize: "4px"
+		fontSize: "5px"
 	},
 	txtsep: {
-		fontSize: "5px",
+		fontSize: "6px",
 		marginTop: "-3px",
 		marginBottom: "-2px"
 	},
 	txtentry: {
-		fontSize: "5px",
+		fontSize: "6px",
 		fontWeight: "bold",
 		color: "blue"
 	},
@@ -171,7 +172,7 @@ function MyDocument({ sec1, sec2, sec4, passengers, children }) {
 						<Text style={styles.txtentry}>{sec2.dateOfJourney}</Text>
 					</View>
 					<Text style={styles.txtsep}>
-						------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+						-------------------------------------------------------------------------------------------------------------------------------------------
 					</Text>
 					<View style={styles.sec2txtrow}>
 						<Text style={styles.txt}>Class: </Text>
@@ -180,7 +181,7 @@ function MyDocument({ sec1, sec2, sec4, passengers, children }) {
 						<Text style={styles.txtentry}>{sec2.numberOfSeats}</Text>
 					</View>
 					<Text style={styles.txtsep}>
-						------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+						-------------------------------------------------------------------------------------------------------------------------------------------
 					</Text>
 					<View style={styles.sec2txtrow}>
 						<Text style={styles.txt}>Station From: </Text>
@@ -189,7 +190,7 @@ function MyDocument({ sec1, sec2, sec4, passengers, children }) {
 						<Text style={styles.txtentry}>{sec2.stationTo}</Text>
 					</View>
 					<Text style={styles.txtsep}>
-						------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+						-------------------------------------------------------------------------------------------------------------------------------------------
 					</Text>
 					<View style={styles.sec2txtrow}>
 						<Text style={styles.txt}>Boarding at: </Text>
@@ -198,7 +199,7 @@ function MyDocument({ sec1, sec2, sec4, passengers, children }) {
 						<Text style={styles.txtentry}>{sec2.reservationUpto}</Text>
 					</View>
 					<Text style={styles.txtsep}>
-						------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+						-------------------------------------------------------------------------------------------------------------------------------------------
 					</Text>
 					<View style={styles.sec2txtrow}>
 						<Text style={styles.txt}>Mobile Number: </Text>
@@ -206,7 +207,7 @@ function MyDocument({ sec1, sec2, sec4, passengers, children }) {
 						<Text style={styles.txt}>(For PNR Status update through SMS)</Text>
 					</View>
 					<Text style={styles.txtsep}>
-						------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+						-------------------------------------------------------------------------------------------------------------------------------------------
 					</Text>
 				</View>
 
@@ -301,7 +302,7 @@ function MyDocument({ sec1, sec2, sec4, passengers, children }) {
 						<Text style={styles.txtentry}>{sec4.dateOfJourney}</Text>
 					</View>
 					<Text style={styles.txtsep}>
-						------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+						-------------------------------------------------------------------------------------------------------------------------------------------
 					</Text>
 					<View style={styles.sec2txtrow}>
 						<Text style={styles.txt}>Class: </Text>
@@ -312,21 +313,21 @@ function MyDocument({ sec1, sec2, sec4, passengers, children }) {
 						<Text style={styles.txtentry}>{sec4.stationTo}</Text>
 					</View>
 					<Text style={styles.txtsep}>
-						------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+						-------------------------------------------------------------------------------------------------------------------------------------------
 					</Text>
 					<View style={styles.sec2txtrow}>
 						<Text style={styles.txt}>Name of Applicant: </Text>
 						<Text style={styles.txtentry}>{sec4.fullname}</Text>
 					</View>
 					<Text style={styles.txtsep}>
-						------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+						-------------------------------------------------------------------------------------------------------------------------------------------
 					</Text>
 					<View style={styles.sec2txtrow}>
 						<Text style={styles.txt}>Full Address: </Text>
 						<Text style={styles.txtentry}>{sec4.fulladdress}</Text>
 					</View>
 					<Text style={styles.txtsep}>
-						------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+						-------------------------------------------------------------------------------------------------------------------------------------------
 					</Text>
 					<View style={styles.sec2txtrow}>
 						<Text style={styles.txt}>Telephone No./Mobile No: </Text>
@@ -337,7 +338,7 @@ function MyDocument({ sec1, sec2, sec4, passengers, children }) {
 						<Text style={styles.txtentry}>{sec4.time}</Text>
 					</View>
 					<Text style={styles.txtsep}>
-						------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+						-------------------------------------------------------------------------------------------------------------------------------------------
 					</Text>
 				</View>
 				<View style={styles.section}>
@@ -351,7 +352,7 @@ function MyDocument({ sec1, sec2, sec4, passengers, children }) {
 						<Text style={styles.txtentry}>-</Text>
 					</View>
 					<Text style={styles.txtsep}>
-						------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+						-------------------------------------------------------------------------------------------------------------------------------------------
 					</Text>
 					<View style={styles.sec2txtrow}>
 						<Text style={styles.txt}>Berth/Seat No: </Text>
@@ -360,12 +361,12 @@ function MyDocument({ sec1, sec2, sec4, passengers, children }) {
 						<Text style={styles.txtentry}>-</Text>
 					</View>
 					<Text style={styles.txtsep}>
-						------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+						-------------------------------------------------------------------------------------------------------------------------------------------
 					</Text>
 				</View>
 				<View style={[styles.section, { position: "absolute", bottom: 0 }]}>
 					<Text style={styles.txt}>
-						------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+						-------------------------------------------------------------------------------------------------------------------------------------------
 					</Text>
 					<Text style={styles.txtsm}>
 						{" "}
