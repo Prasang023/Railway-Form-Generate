@@ -19,7 +19,7 @@ body{
   display: flex;
   flex-direction: column;
   max-width: 900px;
-  margin: 100px;
+  margin: 30px 80px;
   /* overflow-y: scroll; */
 }
 
@@ -29,6 +29,7 @@ body{
   background-color: rgb(43, 43, 221);
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .section-title{
@@ -42,6 +43,7 @@ body{
   background-color: transparent;
   color: black;
   margin-top: 15px;
+  cursor: pointer;
 }
 
 .btn-add {
@@ -91,4 +93,6 @@ body{
 .btn-dwd {
   text-decoration: none;
   color: white;
+  width: 100%;
+  cursor: pointer;
 }
