@@ -134,10 +134,14 @@ function App() {
 	console.log(children)
 
 	return (
+		<>
+		<div className="website-title">
+			<h1>Railway Booking/Cancellation Form Generator</h1>
+		</div>
 		<div className="container">
 			<div className="formContainer">
 				<div>
-					<h3>Section 1 Options</h3>
+					<h3 className="section-title">Select Options</h3>
 					<input
 						type="checkbox"
 						id="sec10"
@@ -186,7 +190,7 @@ function App() {
 					<label htmlFor="sec14"> Do you want a bedroll in train?</label>
 				</div>
 				<div className="secDiv">
-					<h3>Enter Journey Details</h3>
+					<h3 className="section-title">Enter Journey Details</h3>
 					<div className="inputRow">
 						<div className="inputDiv">
 							<label className="inputLabel" for="trainNoAndName">
@@ -316,6 +320,7 @@ function App() {
 					<br />
 				</div>
 				<div className="secDiv">
+				<h3 className="section-title">Passengers Details</h3>
 					{passengers.map((pass) => (
 						<div>
 							<div className="pInputRow">
@@ -420,6 +425,7 @@ function App() {
 				</div>
 
 				<div className="secDiv">
+					<h3 className="section-title">Children below 5 years of age </h3>
 					{children.map((child) => (
 						<div>
 							<div className="pInputRow">
@@ -478,7 +484,7 @@ function App() {
 				</div>
 
 				<div className="secDiv">
-					<h3>Onward/Return Journey Details</h3>
+					<h3 className="section-title">Onward/Return Journey Details</h3>
 					<div className="inputRow">
 						<div className="inputDiv">
 							<label className="inputLabel" for="trainNoAndNameSec4">
@@ -627,6 +633,7 @@ function App() {
 				</PDFViewer>
 			</div>
 		</div>
+		</>
 	)
 }
 

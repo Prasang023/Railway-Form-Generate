@@ -1,16 +1,23 @@
+body{
+  background-color: rgb(196, 196, 218);
+}
+
+.website-title {
+  background-color: rgb(196, 196, 218);
+  text-align: center;
+}
+
 .container {
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  /* height: 100vh; */
+  background-color: rgb(196, 196, 218);
 }
 
 .formContainer {
   display: flex;
   flex-direction: column;
-  align-items: center;
   max-width: 900px;
   margin: 100px;
   /* overflow-y: scroll; */
@@ -23,6 +30,12 @@
   border: none;
   border-radius: 5px;
 }
+
+.section-title{
+  color: rgb(43, 43, 221);
+  font-size: 25px;
+}
+
 
 .btn-delete {
   padding: 2px 5px;

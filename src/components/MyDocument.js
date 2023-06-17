@@ -1,11 +1,5 @@
 import React from "react"
-import {
-	Page,
-	Text,
-	View,
-	Document,
-	StyleSheet
-} from "@react-pdf/renderer"
+import { Page, Text, View, Document, StyleSheet } from "@react-pdf/renderer"
 
 // Create styles
 const styles = StyleSheet.create({
@@ -122,46 +116,48 @@ function MyDocument({ sec1, sec2, sec4, passengers, children }) {
 					</Text>
 				</View>
 				<View style={styles.section}>
-					<View style={styles.sec1textrow}>
-						<Text style={styles.sec1txtleft}>
-							- If you are a Medical Practitioner, Please tick in Box (You could
-							be of help in an emergency):{" "}
-						</Text>
-						<Text style={styles.txt}>{sec1[0] ? "Yes" : "No"}</Text>
-					</View>
-					<View style={styles.sec1textrow}>
-						<Text style={styles.sec1txtleft}>
-							- If you are a Pregnant woman and want to get berth in Quota. If
-							yes, please submit certificate of Regd. Doctor:{" "}
-						</Text>
-						<Text style={styles.txt}>{sec1[1] ? "Yes" : "No"}</Text>
-					</View>
+					<View>
+						<View style={styles.sec1textrow}>
+							<Text style={styles.sec1txtleft}>
+								- If you are a Medical Practitioner, Please tick in Box (You
+								could be of help in an emergency):{" "}
+							</Text>
+							<Text style={styles.txt}>{sec1[0] ? "Yes" : "No"}</Text>
+						</View>
+						<View style={styles.sec1textrow}>
+							<Text style={styles.sec1txtleft}>
+								- If you are a Pregnant woman and want to get berth in Quota. If
+								yes, please submit certificate of Regd. Doctor:{" "}
+							</Text>
+							<Text style={styles.txt}>{sec1[1] ? "Yes" : "No"}</Text>
+						</View>
 
-					<View style={styles.sec1textrow}>
-						<Text style={styles.sec1txtleft}>
-							- If you want Sr. Citizen Concession, please write Yes/No in Box
-							(Please carry a proof of age during the journey to avoid
-							inconvenience of penal charging):{" "}
-						</Text>
-						<Text style={styles.txt}>{sec1[2] ? "Yes" : "No"}</Text>
-					</View>
+						<View style={styles.sec1textrow}>
+							<Text style={styles.sec1txtleft}>
+								- If you want Sr. Citizen Concession, please write Yes/No in Box
+								(Please carry a proof of age during the journey to avoid
+								inconvenience of penal charging):{" "}
+							</Text>
+							<Text style={styles.txt}>{sec1[2] ? "Yes" : "No"}</Text>
+						</View>
 
-					<View style={styles.sec1textrow}>
-						<Text style={styles.sec1txtleft}>
-							- Do you want to be upgraded without any extra charge? Write
-							Yes/No (if this option is not exercised, full fare paying
-							passengers may be upgraded automatically):
-						</Text>
-						<Text style={styles.txt}>{sec1[3] ? "Yes" : "No"}</Text>
-					</View>
+						<View style={styles.sec1textrow}>
+							<Text style={styles.sec1txtleft}>
+								- Do you want to be upgraded without any extra charge? Write
+								Yes/No (if this option is not exercised, full fare paying
+								passengers may be upgraded automatically):
+							</Text>
+							<Text style={styles.txt}>{sec1[3] ? "Yes" : "No"}</Text>
+						</View>
 
-					<View style={styles.sec1textrow}>
-						<Text style={styles.sec1txtleft}>
-							- If you are travelling in 3 AC Class of Garib Rath Express Train
-							or in Sleeper Class of Duronto Express Train, do you want a
-							bedroll in train ?:{" "}
-						</Text>
-						<Text style={styles.txt}>{sec1[4] ? "Yes" : "No"}</Text>
+						<View style={styles.sec1textrow}>
+							<Text style={styles.sec1txtleft}>
+								- If you are travelling in 3 AC Class of Garib Rath Express
+								Train or in Sleeper Class of Duronto Express Train, do you want
+								a bedroll in train ?:{" "}
+							</Text>
+							<Text style={styles.txt}>{sec1[4] ? "Yes" : "No"}</Text>
+						</View>
 					</View>
 				</View>
 				<View style={styles.section}>
@@ -251,7 +247,9 @@ function MyDocument({ sec1, sec2, sec4, passengers, children }) {
 									<Text style={styles.tableCell}>{p.tan}</Text>
 								</View>
 								<View style={styles.tableColMid}>
-									<Text style={styles.tableCell}>{p.berthDemand + "," + p.mealDemand}</Text>
+									<Text style={styles.tableCell}>
+										{p.berthDemand + "," + p.mealDemand}
+									</Text>
 								</View>
 							</View>
 						))}
@@ -274,20 +272,22 @@ function MyDocument({ sec1, sec2, sec4, passengers, children }) {
 								<Text style={styles.tableCell}>Age</Text>
 							</View>
 						</View>
-						{children.map((child) => <View style={styles.tableRow}>
-							<View style={styles.tableColThin}>
-								<Text style={styles.tableCell}>{child.sno}.</Text>
+						{children.map((child) => (
+							<View style={styles.tableRow}>
+								<View style={styles.tableColThin}>
+									<Text style={styles.tableCell}>{child.sno}.</Text>
+								</View>
+								<View style={styles.tableColMaxBig}>
+									<Text style={styles.tableCell}>{child.name}</Text>
+								</View>
+								<View style={styles.tableColThin}>
+									<Text style={styles.tableCell}>{child.gender}</Text>
+								</View>
+								<View style={styles.tableColThin}>
+									<Text style={styles.tableCell}>{child.age}</Text>
+								</View>
 							</View>
-							<View style={styles.tableColMaxBig}>
-								<Text style={styles.tableCell}>{child.name}</Text>
-							</View>
-							<View style={styles.tableColThin}>
-								<Text style={styles.tableCell}>{child.gender}</Text>
-							</View>
-							<View style={styles.tableColThin}>
-								<Text style={styles.tableCell}>{child.age}</Text>
-							</View>
-						</View>)}
+						))}
 					</View>
 				</View>
 
