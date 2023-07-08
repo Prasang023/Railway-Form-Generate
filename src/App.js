@@ -366,6 +366,12 @@ function App() {
 											onChange={(e) => handleChangePass(e)}
 										/>
 									</div>
+									<button
+										className="btn btn-delete"
+										onClick={() => deletePass(pass.sno)}
+									>
+										X
+									</button>
 								</div>
 								{/* <div className="pInputRow">
 									<div className="inputDiv pinput">
