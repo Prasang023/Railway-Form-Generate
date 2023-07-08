@@ -204,6 +204,7 @@ function App() {
 									name="trainNoAndName"
 									className="inputField"
 									onChange={(e) => handleChangeSec2(e)}
+									placeholder="12323 Rajdhani"
 								/>
 							</div>
 							<div className="inputDiv">
@@ -216,6 +217,7 @@ function App() {
 									name="dateOfJourney"
 									className="inputField"
 									onChange={(e) => handleChangeSec2(e)}
+									placeholder="08/05/2023"
 								/>
 							</div>
 						</div>
@@ -250,6 +252,7 @@ function App() {
 									name="numberOfSeats"
 									className="inputField"
 									onChange={(e) => handleChangeSec2(e)}
+									placeholder="2"
 								/>
 							</div>
 						</div>
@@ -264,6 +267,7 @@ function App() {
 									name="stationFrom"
 									className="inputField"
 									onChange={(e) => handleChangeSec2(e)}
+									placeholder="BSB Varanasi"
 								/>
 							</div>
 							<div className="inputDiv">
@@ -276,6 +280,7 @@ function App() {
 									name="stationTo"
 									className="inputField"
 									onChange={(e) => handleChangeSec2(e)}
+									placeholder="DLI New Delhi"
 								/>
 							</div>
 						</div>
@@ -290,6 +295,7 @@ function App() {
 									name="boardingAt"
 									className="inputField"
 									onChange={(e) => handleChangeSec2(e)}
+									placeholder="PRYJ Prayagraj"
 								/>
 							</div>
 							<div className="inputDiv">
@@ -302,6 +308,7 @@ function App() {
 									name="reservationUpto"
 									className="inputField"
 									onChange={(e) => handleChangeSec2(e)}
+									placeholder="DLI New Delhi"
 								/>
 							</div>
 						</div>
@@ -316,6 +323,7 @@ function App() {
 									name="mobile"
 									className="inputField"
 									onChange={(e) => handleChangeSec2(e)}
+									placeholder="9845745846"
 								/>
 							</div>
 						</div>
@@ -337,6 +345,7 @@ function App() {
 											name="name"
 											className="inputField"
 											onChange={(e) => handleChangePass(e)}
+											placeholder="Rohan Trivedi"
 										/>
 									</div>
 									<div className="inputDiv pinput">
@@ -364,6 +373,7 @@ function App() {
 											name="age"
 											className="inputField"
 											onChange={(e) => handleChangePass(e)}
+											placeholder="38"
 										/>
 									</div>
 									<button
@@ -504,6 +514,7 @@ function App() {
 									name="trainNoAndName"
 									className="inputField"
 									onChange={(e) => handleChangeSec4(e)}
+									placeholder="12324 Rajdhani"
 								/>
 							</div>
 							<div className="inputDiv">
@@ -516,6 +527,7 @@ function App() {
 									name="dateOfJourney"
 									className="inputField"
 									onChange={(e) => handleChangeSec4(e)}
+									placeholder="24/05/2023"
 								/>
 							</div>
 						</div>
@@ -552,6 +564,7 @@ function App() {
 									name="stationFrom"
 									className="inputField"
 									onChange={(e) => handleChangeSec4(e)}
+									placeholder="DLI New Delhi"
 								/>
 							</div>
 							<div className="inputDiv">
@@ -564,6 +577,7 @@ function App() {
 									name="stationTo"
 									className="inputField"
 									onChange={(e) => handleChangeSec4(e)}
+									placeholder="BSB Varanasi"
 								/>
 							</div>
 						</div>
@@ -578,6 +592,7 @@ function App() {
 									name="fullname"
 									className="inputField"
 									onChange={(e) => handleChangeSec4(e)}
+									placeholder="Rohan Trivedi"
 								/>
 							</div>
 							<div className="inputDiv">
@@ -590,6 +605,7 @@ function App() {
 									name="fulladdress"
 									className="inputField"
 									onChange={(e) => handleChangeSec4(e)}
+									placeholder="Pritampura, Delhi"
 								/>
 							</div>
 						</div>
@@ -604,6 +620,7 @@ function App() {
 									name="mobile"
 									className="inputField"
 									onChange={(e) => handleChangeSec4(e)}
+									placeholder="9845784575"
 								/>
 							</div>
 						</div>
@@ -621,6 +638,7 @@ function App() {
 									name="pnrNo"
 									className="inputField"
 									onChange={(e) => handleChangeSec4(e)}
+									placeholder="3232252656"
 								/>
 							</div>
 						</div>
@@ -635,6 +653,7 @@ function App() {
 									name="amtcol"
 									className="inputField"
 									onChange={(e) => handleChangeSec4(e)}
+									placeholder="1450"
 								/>
 							</div>
 						</div>
