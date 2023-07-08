@@ -26,7 +26,9 @@ function App() {
 		fulladdress: "-",
 		mobile: "",
 		date: "-",
-		time: "-"
+		time: "-",
+		pnrNo: '-',
+		amtcol: "-"
 	})
 	const [passengers, setPassengers] = useState([
 		{
@@ -365,7 +367,7 @@ function App() {
 										/>
 									</div>
 								</div>
-								<div className="pInputRow">
+								{/* <div className="pInputRow">
 									<div className="inputDiv pinput">
 										<label className="inputLabel" for="ptan">
 											Concession / TA No:
@@ -416,7 +418,7 @@ function App() {
 									>
 										X
 									</button>
-								</div>
+								</div> */}
 							</div>
 						))}
 						<button className="btn btn-add" onClick={addPass}>
@@ -601,6 +603,36 @@ function App() {
 						</div>
 						<br />
 					</div>
+					<div className="secDiv">
+					<div className="inputRow" style={{ width: '100%', display: 'flex' }}>
+							<div className="inputDiv" style={{ width: '100%' }}>
+								<label className="inputLabel" for="pnrNo">
+									PNR No:
+								</label>
+								<input
+									type="number"
+									id="pnrNo"
+									name="pnrNo"
+									className="inputField"
+									onChange={(e) => handleChangeSec4(e)}
+								/>
+							</div>
+						</div>
+						<div className="inputRow" style={{ width: '100%', display: 'flex' }}>
+							<div className="inputDiv" style={{ width: '100%' }}>
+								<label className="inputLabel" for="amtcol">
+									Amount Collected:
+								</label>
+								<input
+									type="text"
+									id="amtcol"
+									name="amtcol"
+									className="inputField"
+									onChange={(e) => handleChangeSec4(e)}
+								/>
+							</div>
+						</div>
+					</div>
 					<PDFDownloadLink
 						className="btn-dwd"
 						document={
@@ -621,7 +653,7 @@ function App() {
 					</PDFDownloadLink>
 				</div>
 				<div className="viewContainer">
-					<PDFViewer style={{ height: "500px", width: "500px" }}>
+					<PDFViewer style={{ height: "650px", width: "500px" }}>
 						<MyDocument
 							sec1={sec1}
 							sec2={sec2}

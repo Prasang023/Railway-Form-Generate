@@ -349,7 +349,7 @@ function MyDocument({ sec1, sec2, sec4, passengers, children }) {
 						<Text style={styles.txt}>S. No. of Requisition: </Text>
 						<Text style={styles.txtentry}>-</Text>
 						<Text style={styles.txt}>PNR No: </Text>
-						<Text style={styles.txtentry}>-</Text>
+						<Text style={styles.txtentry}>{sec4.pnrNo}</Text>
 					</View>
 					<Text style={styles.txtsep}>
 						-------------------------------------------------------------------------------------------------------------------------------------------
@@ -358,7 +358,7 @@ function MyDocument({ sec1, sec2, sec4, passengers, children }) {
 						<Text style={styles.txt}>Berth/Seat No: </Text>
 						<Text style={styles.txtentry}>-</Text>
 						<Text style={styles.txt}>Amount Collected: </Text>
-						<Text style={styles.txtentry}>-</Text>
+						<Text style={styles.txtentry}>{sec4.amtcol}</Text>
 					</View>
 					<Text style={styles.txtsep}>
 						-------------------------------------------------------------------------------------------------------------------------------------------
